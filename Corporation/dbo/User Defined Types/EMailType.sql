@@ -1,0 +1,4 @@
+﻿CREATE TYPE [dbo].[EMailType]
+    FROM NVARCHAR (50) NULL;
+GO
+
