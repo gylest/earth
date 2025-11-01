@@ -1,0 +1,4 @@
+﻿CREATE TYPE [dbo].[PhoneType]
+    FROM NVARCHAR (25) NULL;
+GO
+
