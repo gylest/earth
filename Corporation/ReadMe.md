@@ -23,7 +23,8 @@ This is a `SQL Database Project` that has been built using the SDK-style from `M
 
 ### Pre-requisites
 
-Command-line utility SqlPackage for creating and deploying .dacpac: `dotnet tool install -g microsoft.sqlpackage`  
+Install SqlPackage for creating and deploying .dacpac: `dotnet tool install -g microsoft.sqlpackage`  
+Update SqlPackage to latest version: `dotnet tool update -g microsoft.sqlpackage`  
 Templates NuGet package: `dotnet new install Microsoft.Build.Sql.Templatess`  
 Create a new project: `dotnet new sqlproj -n Corporation`  
 
