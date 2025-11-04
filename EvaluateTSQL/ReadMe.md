@@ -10,9 +10,9 @@ This is a `SQL Database Project` that has been built using the SDK-style from `M
 ## Project Structure
 
 - **dbo**  
-  Contains the functions, roles, users, stored procedures, tables, types and views  for the dbo schema
+  Contains the functions and user defined typesfor the dbo schema
 - **EvaluateOffice**  
-  Contains the functions and stored procedures for the EvaluateOffice schema
+  Contains the tables and stored procedures for the EvaluateOffice schema
 - **HumanResources**  
   Contains the tables for the HumanResources schema  
 - **Person**  
@@ -32,8 +32,8 @@ This is a `SQL Database Project` that has been built using the SDK-style from `M
 
 ## Prerequisites
 
-- SQL Server 2022 or later (local or remote instance)
-- Command-line utility SqlPackage
+- SQL Server 2022 or later  
+- Command-line utility `SqlPackage`  
 
 ---
 

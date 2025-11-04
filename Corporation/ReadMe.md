@@ -16,8 +16,8 @@ This is a `SQL Database Project` that has been built using the SDK-style from `M
 
 ## Prerequisites
 
-- SQL Server 2022 or later (local or remote instance)
-- Command-line utility SqlPackage
+- SQL Server 2022 or later  
+- Command-line utility `SqlPackage`  
 
 ## Build and Deployment Instructions
 

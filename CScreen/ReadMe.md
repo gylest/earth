@@ -10,7 +10,7 @@ This is a `SQL Database Project` that has been built using the SDK-style from `M
 ## Project Structure
 
 - **dbo**  
-  Contains the stored procedures, tables and user defined types for the `dbo` schema  
+  Contains the stored procedures and tables for the `dbo` schema  
 
 ---
 
