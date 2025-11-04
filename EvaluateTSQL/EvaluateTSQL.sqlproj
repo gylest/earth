@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="2.0.0" />
+  <PropertyGroup>
+    <Name>Corporation</Name>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+    <ProjectGuid>{6C30C992-11F2-4838-9F72-CC1B950DFC49}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".vscode\tasks.json" />
+    <None Include="Scripts\Advanced Queries.sql" />
+    <None Include="Scripts\Data Definition.sql" />
+    <None Include="Scripts\Data Manipulation.sql" />
+    <None Include="Scripts\Data Types.sql" />
+    <None Include="Scripts\Database_Design.sql" />
+    <None Include="Scripts\Programming Functions.sql" />
+    <None Include="Scripts\Programming JSON.sql" />
+    <None Include="Scripts\Programming Logic.sql" />
+    <None Include="Scripts\Programming XML.sql" />
+    <None Include="Scripts\Select Basic.sql" />
+    <None Include="Scripts\Select Grouping and Summarizing.sql" />
+    <None Include="Scripts\Select Multiple Tables.sql" />
+    <None Include="Scripts\Tests.sql" />
+    <None Include="Scripts\Tuning.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+</Project>

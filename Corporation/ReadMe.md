@@ -7,11 +7,11 @@ This is a `SQL Database Project` that has been built using the SDK-style from `M
 
 ## Project Structure
 
-- **dbo/**  
+- **dbo**  
   Contains the defaults, stored procedures, tables, user defined types and views
-- **Scripts/**  
+- **Scripts**  
   Contains a post deployment script `Script.PostDeployment.sql` and ad-hoc database maintenance scripts
-- **Security/**  
+- **Security**  
   Contains security  scripts for logins, users and roles
 
 ## Prerequisites
