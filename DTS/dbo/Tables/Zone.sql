@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[Zone] 
+(
+	[ID]                 int IDENTITY (1, 1) NOT NULL,
+	[Name]               NameUDT             NOT NULL,
+	[NameLocal]          LocalUDT                NULL,
+	[Version]            int                 NOT NULL,
+	[ConfigID]           int                 NOT NULL,
+	[StartPosition]      int                 NOT NULL,
+	[EndPosition]        int                 NOT NULL,
+	[AlarmID]            int                     NULL,
+	[ProcessID]          int                     NULL,
+	[MeasurementMode]    int                 NOT NULL,
+	[MeasuredSignal]     int                     NULL,
+	[MeasurementProcess] int                     NULL,
+	[FibreNumber]        int                 NOT NULL,
+	[FibreEnd]           int                 NOT NULL,
+    [CreateDT]           DATETIME         CONSTRAINT [DF_Zone_CreateDT] DEFAULT (sysdatetime()) NOT NULL,
+    [ModifyDT]           DATETIME         NULL,
+    CONSTRAINT [PK_Zone] PRIMARY KEY CLUSTERED ([ID] ASC),
+    CONSTRAINT [CK_Zone_FibreEnd] CHECK ([FibreEnd]>=(0) AND [FibreEnd]<=(2)),
+    CONSTRAINT [CK_Zone_FibreNumber] CHECK ([FibreNumber]>=(0) AND [FibreNumber]<=(32)),
+    CONSTRAINT [CK_Zone_MeasuredSignal] CHECK ([MeasuredSignal]>=(0) AND [MeasuredSignal]<=(4)),
+    CONSTRAINT [CK_Zone_MeasurementMode] CHECK ([MeasurementMode]>=(0) AND [MeasurementMode]<=(13)),
+    CONSTRAINT [CK_Zone_MeasurementProcess] CHECK ([MeasurementProcess]>=(0) AND [MeasurementProcess]<=(4)),
+    CONSTRAINT [FK_Zone_Alarm] FOREIGN KEY ([AlarmID]) REFERENCES [dbo].[Alarm] ([ID]),
+    CONSTRAINT [FK_Zone_Config] FOREIGN KEY ([ConfigID]) REFERENCES [dbo].[Config] ([ID]),
+    CONSTRAINT [FK_Zone_Zone_Process] FOREIGN KEY ([ProcessID]) REFERENCES [dbo].[Zone_Process] ([ID]),
+    CONSTRAINT [Unique_Zone_NameAndConfigID] UNIQUE NONCLUSTERED ([Name] ASC, [ConfigID] ASC)
+);
+GO
