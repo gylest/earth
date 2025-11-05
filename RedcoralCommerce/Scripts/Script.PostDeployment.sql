@@ -52,37 +52,38 @@ INSERT Catalog VALUES ( 50, '2', 'INACTIVE',             0)
 GO
 
 --
--- Populate Countrye
+-- Populate Country
 --
-INSERT Country VALUES( 'AT', 'Austria')
-INSERT Country VALUES( 'BE', 'Belguim')
-INSERT Country VALUES( 'BG', 'Bulgaria')
-INSERT Country VALUES( 'CY', 'Cyprus')
-INSERT Country VALUES( 'CZ', 'Czech Republic')
-INSERT Country VALUES( 'DK', 'Denmark')
-INSERT Country VALUES( 'EE', 'Estonia')
-INSERT Country VALUES( 'FI', 'Finland')
-INSERT Country VALUES( 'FR', 'France')
-INSERT Country VALUES( 'DE', 'German')
-INSERT Country VALUES( 'GR', 'Greece')
-INSERT Country VALUES( 'HU', 'Hungary')
-INSERT Country VALUES( 'IE', 'Ireland')
-INSERT Country VALUES( 'IT', 'Italy')
-INSERT Country VALUES( 'LV', 'Latvia')
-INSERT Country VALUES( 'LT', 'Lithuania')
-INSERT Country VALUES( 'LU', 'Luxembourg')
-INSERT Country VALUES( 'MT', 'Malta')
-INSERT Country VALUES( 'NL', 'Netherlands')
-INSERT Country VALUES( 'PL', 'Poland')
-INSERT Country VALUES( 'PT', 'Portugal')
-INSERT Country VALUES( 'RO', 'Romania')
-INSERT Country VALUES( 'SK', 'Slovakia')
-INSERT Country VALUES( 'SL', 'Slovenia')
-INSERT Country VALUES( 'ES', 'Spain')
-INSERT Country VALUES( 'SE', 'Sweden')
-INSERT Country VALUES( 'GB', 'United Kingdom')
-INSERT Country VALUES( 'NO', 'Norway')
-INSERT Country VALUES( 'CH', 'Swiss')
+INSERT Country VALUES
+    ( 'AT', 'Austria'),
+    ( 'BE', 'Belgium'),
+    ( 'BG', 'Bulgaria'),
+    ( 'CY', 'Cyprus'),
+    ( 'CZ', 'Czech Republic'),
+    ( 'DK', 'Denmark'),
+    ( 'EE', 'Estonia'),
+    ( 'FI', 'Finland'),
+    ( 'FR', 'France'),
+    ( 'DE', 'German'),
+    ( 'GR', 'Greece'),
+    ( 'HU', 'Hungary'),
+    ( 'IE', 'Ireland'),
+    ( 'IT', 'Italy'),
+    ( 'LV', 'Latvia'),
+    ( 'LT', 'Lithuania'),
+    ( 'LU', 'Luxembourg'),
+    ( 'MT', 'Malta'),
+    ( 'NL', 'Netherlands'),
+    ( 'PL', 'Poland'),
+    ( 'PT', 'Portugal'),
+    ( 'RO', 'Romania'),
+    ( 'SK', 'Slovakia'),
+    ( 'SL', 'Slovenia'),
+    ( 'ES', 'Spain'),
+    ( 'SE', 'Sweden'),
+    ( 'GB', 'United Kingdom'),
+    ( 'NO', 'Norway'),
+    ( 'CH', 'Swiss')
 GO
 
 --
@@ -118,4 +119,10 @@ INSERT SalesTaxRate VALUES( 'GB', 15.00, '1-SEP-2009', '31-DEC-2009')
 INSERT SalesTaxRate VALUES( 'GB', 17.50, '1-JAN-2010', NULL)
 INSERT SalesTaxRate VALUES( 'NO', 25.00, '1-SEP-2009', NULL)
 INSERT SalesTaxRate VALUES( 'CH',  7.60, '1-SEP-2009', NULL)
+GO
+
+--
+-- Add SQL Error Messages
+--
+:r .\ErrorMessages.sql
 GO
