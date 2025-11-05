@@ -1,0 +1,4 @@
+﻿CREATE TYPE [dbo].[str16]
+    FROM NVARCHAR (16) NOT NULL;
+GO
+

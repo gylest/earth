@@ -1,0 +1,4 @@
+﻿CREATE TYPE [dbo].[str64]
+    FROM NVARCHAR (64) NOT NULL;
+GO
+

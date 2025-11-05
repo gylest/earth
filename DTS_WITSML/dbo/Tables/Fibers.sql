@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[Fibers] (
+    [ID]                  INT                      IDENTITY (1, 1) NOT NULL,
+    [WellboreID]          INT                      NOT NULL,
+    [fiberNumber]         INT                      NOT NULL,
+    [numSerial]           [dbo].[str32]            NOT NULL,
+    [correctionConstants] NVARCHAR (1000)          NOT NULL,
+    [indexChannel]        [dbo].[str32]            NOT NULL,
+    [ProcessingMethod]    [dbo].[strcatalog]       NOT NULL,
+    [length]              [dbo].[length]           NOT NULL,
+    [dTim]                DATETIME                 NOT NULL,
+    [retrievable]         [dbo].[boolean]          NOT NULL,
+    [offset]              [dbo].[length]           NOT NULL,
+    [DirectionRef]        [dbo].[str32]            NOT NULL,
+    [lossTwoWay]          [dbo].[fiberLoss]        NOT NULL,
+    [installationCompany] [dbo].[str64]            NOT NULL,
+    [manufacturer]        [dbo].[str64]            NOT NULL,
+    [type]                [dbo].[str32]            NOT NULL,
+    [diameter]            [dbo].[cylinderDiameter] NULL,
+    [indexRef]            [dbo].[str32]            NULL,
+    [lossdiff]            [dbo].[fiberLoss]        NULL,
+    [lossLoop]            [dbo].[fiberLoss]        NULL,
+    [lossConnector]       [dbo].[fiberLoss]        NULL,
+    [lossOther]           [dbo].[fiberLoss]        NULL,
+    [settingLoss]         [dbo].[fiberLoss]        NULL,
+    [CreateDate]          DATETIME                 CONSTRAINT [DF_Fibers_CreateDate] DEFAULT (sysdatetime()) NOT NULL,
+    [ModifyDate]          DATETIME                 CONSTRAINT [DF_Fibers_ModifyDate] DEFAULT (sysdatetime()) NOT NULL,
+    CONSTRAINT [PK_Fibers] PRIMARY KEY CLUSTERED ([ID] ASC),
+    CONSTRAINT [CK_Fibers_numSerial] CHECK (len([numSerial])>(0)),
+    CONSTRAINT [FK_Fibers_Wellbores] FOREIGN KEY ([WellboreID]) REFERENCES [dbo].[Wellbores] ([ID]),
+    CONSTRAINT [UN_Fibers] UNIQUE NONCLUSTERED ([WellboreID] ASC)
+);
+GO
+
