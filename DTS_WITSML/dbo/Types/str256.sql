@@ -1,0 +1,4 @@
+﻿CREATE TYPE [dbo].[str256]
+    FROM NVARCHAR (256) NOT NULL;
+GO
+
