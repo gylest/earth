@@ -1,8 +1,8 @@
-# DTSDatabase
+# DTS Database
 
 ## Overview
 
-The `DTSDatabase` project contains the database schema and scripts to build the database.  
+The `DTS` project contains the database schema and scripts to build the database.  
 This is a `SQL Database Project` that has been built using the SDK-style from `Microsoft.Build.Sql`.  
 
 ## Project Structure

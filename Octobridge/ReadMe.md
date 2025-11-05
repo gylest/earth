@@ -1,8 +1,8 @@
-# OctobridgeDatabase
+# Octobridge Database
 
 ## Overview
 
-The `OctobridgeDatabase` project contains the database schema and scripts to build the database.  
+The `Octobridge` project contains the database schema and scripts to build the database.  
 This is a `SQL Database Project` that has been built using the SDK-style from `Microsoft.Build.Sql`.  
 
 ## Project Structure
