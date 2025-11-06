@@ -20,8 +20,8 @@
     [RefRate]         NVARCHAR(50)    NULL,
     [Comment]         NVARCHAR(50)    NULL,
     [IsBlocked]       BIT             NULL,
-    [Recipients]      NVARCHAR(2048)  NULL,
-    [UserRecipients]  NVARCHAR(2048)  NULL,
+    [Recipients]      NVARCHAR(MAX)   NULL,
+    [UserRecipients]  NVARCHAR(MAX)   NULL,
     [RefreshDateTime] DATETIME        NULL,
     [ImportDateTime]  DATETIME        NOT NULL,
     [ImportFile]      NVARCHAR(512)   NOT NULL
