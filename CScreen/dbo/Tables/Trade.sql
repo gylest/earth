@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Trade]
 (
-    [TradeRowID]      BIGINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [TradeRowID]      BIGINT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Trade_TradeRowID PRIMARY KEY,
     [RecordDate]      DATE            NOT NULL,
     [RecordTime]      TIME(3)         NOT NULL,
     [IPAddress]       NVARCHAR(50)    NOT NULL,

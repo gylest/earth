@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Order]
 (
-    [OrderRowID]      BIGINT IDENTITY(1,1) NOT NULL PRIMARY KEY, -- Added surrogate key
+    [OrderRowID]      BIGINT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Order_OrderRowID PRIMARY KEY, -- Added surrogate key
     [RecordDate]      DATE            NOT NULL,
     [RecordTime]      TIME(3)         NOT NULL,
     [IPAddress]       NVARCHAR(50)    NOT NULL,
