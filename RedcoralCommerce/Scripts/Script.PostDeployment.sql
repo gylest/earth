@@ -120,9 +120,3 @@ INSERT SalesTaxRate VALUES( 'GB', 17.50, '1-JAN-2010', NULL)
 INSERT SalesTaxRate VALUES( 'NO', 25.00, '1-SEP-2009', NULL)
 INSERT SalesTaxRate VALUES( 'CH',  7.60, '1-SEP-2009', NULL)
 GO
-
---
--- Add SQL Error Messages
---
-:r .\ErrorMessages.sql
-GO
