@@ -27,7 +27,7 @@
     [ContractFlexType]  NVARCHAR(50)   NULL,
     [ImportDateTime]    DATETIME       NOT NULL,
     [ImportFile]        NVARCHAR(512)  NOT NULL,
-    CONSTRAINT [PK_Legs] PRIMARY KEY CLUSTERED ([RecordID],[LegID]),
+    CONSTRAINT [PK_Legs_RecordID_LegID] PRIMARY KEY CLUSTERED ([RecordID],[LegID]),
     CONSTRAINT [FK_Legs_CreateStructure] FOREIGN KEY ([RecordID])
         REFERENCES [dbo].[CreateStructure]([RecordID]) ON DELETE CASCADE
 );

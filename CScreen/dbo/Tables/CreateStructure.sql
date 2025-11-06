@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[CreateStructure]
 (
-    [RecordID]        INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [RecordID]        INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_CreateStructure_RecordID PRIMARY KEY,
     [RecordDate]      DATE            NOT NULL,
     [RecordTime]      TIME(3)         NOT NULL,
     [IPAddress]       NVARCHAR(50)    NOT NULL,
