@@ -1,4 +1,4 @@
-﻿CREATE TRIGGER tblTriggerAuditRecord on [Order]
+﻿CREATE TRIGGER trg_Order_InsertAuditRecord on [Order]
 AFTER INSERT, UPDATE, DELETE
 AS
 BEGIN
