@@ -43,7 +43,7 @@ This is a `SQL Database Project` that has been built using the SDK-style from `M
 
 Install SqlPackage for creating and deploying .dacpac: `dotnet tool install -g microsoft.sqlpackage`  
 Update SqlPackage to latest version: `dotnet tool update -g microsoft.sqlpackage`  
-Templates NuGet package: `dotnet new install Microsoft.Build.Sql.Templatess`  
+Install/Update SQL Templates NuGet package: `dotnet new install Microsoft.Build.Sql.Templates`  
 Create a new project: `dotnet new sqlproj -n Corporation`  
 
 ### Build the Database Model
